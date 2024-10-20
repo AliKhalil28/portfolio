@@ -33,7 +33,7 @@ export default function Header() {
             onMouseEnter={() => handleZoom("resume")}
             onClick={() =>
               window.open(
-                "https://drive.google.com/file/d/YOUR_RESUME_ID/view",
+                "https://drive.google.com/file/d/1vg3FVg4Mzp-MUma_c5Xphob-epBnfJTF/view",
                 "_blank"
               )
             }
@@ -46,14 +46,14 @@ export default function Header() {
         {/* Social icons Start */}
         <div style={styles.socialIcons}>
           <a
-            href="https://www.linkedin.com/in/profile"
+            href="https://www.linkedin.com/in/ali-khalil-753469285/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-linkedin" style={styles.icon}></i>
           </a>
           <a
-            href="https://github.com/profile"
+            href="https://github.com/AliKhalil28"
             target="_blank"
             rel="noopener noreferrer"
           >

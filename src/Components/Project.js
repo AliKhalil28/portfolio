@@ -21,8 +21,8 @@ const projects = [
     description:
       "A personal portfolio website built using React, showcasing user skills, projects, and experience.",
     image: prjct3,
-    demoLink: "https://your-demo-link.com",
-    codeLink: "https://github.com/your-repo",
+    demoLink: "https://www.codewithali.info/",
+    codeLink: "hhttps://github.com/AliKhalil28/portfolio",
   },
   
     
