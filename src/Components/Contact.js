@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import '../css/style.css';
 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxTMUNXdeWZE-a-N66A9muMRuRRklhVDcMu-c2ErmYDUS4IQPQS0tdhUL41cHjQ0AhG/exec';
+
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    Name: '',
+    Email: '',
+    Subject: '',
+    Description: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new URLSearchParams(formData)
+    })
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message));
+  };
+  
   return (
    <div>
    <section className="contact" id="consec">
@@ -28,17 +54,18 @@ const Contact = () => {
         </div>
         <div className="contact-right">
           <div className="form-container">
-            <form action="" className="form">
+            <form action="" className="form" onSubmit={handleSubmit} name="submit-to-google-sheet">
               <h2>Drop Me a Line</h2>
               <label for="name">Name</label>
-              <input type="text" className="form-input" id="name"/>
+              <input type="text" className="form-input" id="name" name="Name" value={formData.Name} onChange={handleChange} required/>
               <label for="email">Email</label>
-              <input type="text" className="form-input" id="email"/>
+              <input type="email" className="form-input" id="email" name="Email" value={formData.Email} onChange={handleChange} required/>
               <label for="subject">Subject</label>
-              <input type="text" className="form-input" id="subject"/>
+              <input type="text" className="form-input" id="subject" name="Subject" value={formData.Subject} onChange={handleChange} required/>
               <label for="textarea">Message</label>
-              <textarea type="text" rows="4" className="form-input" id="textarea"> </textarea>
-              <button type="button" value="Submit" className="submitbtn">Submit <i className="fa-regular fa-paper-plane"></i></button> 
+              <textarea type="text" rows="4" className="form-input" id="textarea" name="Description" value={formData.Description} onChange={handleChange} required> </textarea>
+              <button type="submit" value="Submit" className="submitbtn">Submit <i className="fa-regular fa-paper-plane"></i></button> 
+              <span></span>
             </form>
           </div>
         </div>
@@ -48,7 +75,10 @@ const Contact = () => {
       <p>Ali Khalil | All Right Reserved © 2024</p>
     </footer>
    </div>
+
+   
   );
+  
 };
 
 export default Contact;

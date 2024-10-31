@@ -331,6 +331,10 @@ body{
     padding: 3px;
 }
 
+.info-card i{
+    margin-right: 8px;
+}
+
 .info-social i {
     margin: 10px 0;
     padding: 3px;
