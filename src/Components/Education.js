@@ -29,7 +29,7 @@ const educationData = [
 const Education = () => {
   
    return (
-    <section className="education">
+    <section className="education" id="edusec">
       <h1>Education</h1>
       <div className="ex-card-body">
       {educationData.map((edu) => (

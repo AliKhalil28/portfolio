@@ -33,7 +33,7 @@ const Project = () => {
   return (
     
 
-    <section class="projects">
+    <section class="projects" id="prosec">
     <h1>Projects</h1>
     <div class="card-body">
     <div className="card">

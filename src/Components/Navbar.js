@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
     <div className="container-fluid d-flex">
-        <a className="navbar-brand me-auto">Ali Khalil</a>
+        <a className="navbar-brand me-auto" href="#homesec">Ali Khalil</a>
         
         <button 
             className="navbar-toggler" 
@@ -28,25 +28,25 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                    <a className="nav-link" aria-current="page" href="#">Home</a>
+                    <a className="nav-link" aria-current="page" href="#homesec">Home</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">About</a>
+                    <a className="nav-link" href="#aboutsec">About</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Skills</a>
+                    <a className="nav-link" href="#skillsec">Skills</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Experience</a>
+                    <a className="nav-link" href="#expsec">Experience</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Education</a>
+                    <a className="nav-link" href="#edusec">Education</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Projects</a>
+                    <a className="nav-link" href="#prosec">Projects</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Contact</a>
+                    <a className="nav-link" href="#consec">Contact</a>
                 </li>
             </ul>
         </div>

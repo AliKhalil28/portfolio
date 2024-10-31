@@ -35,7 +35,7 @@ const duplicatedSkills = [
 
 const SkillsSection = () => {
   return (
-    <section className="skills">
+    <section className="skills" id="skillsec">
       <h1>Skills</h1>
       <div className="skills-sec">
         <div className="marquee">

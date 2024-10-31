@@ -4,6 +4,10 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     background-color: #12121f;
 }
@@ -45,6 +49,20 @@ body{
     border-radius: 3px;
     padding: 5px;
 }
+
+.cursor {
+    display: inline-block;
+    width: 1px;
+    animation: blink 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+
 .header .btns{
     padding: 5px 0px;
 }

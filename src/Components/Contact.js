@@ -4,8 +4,8 @@ import '../css/style.css';
 const Contact = () => {
   return (
    <div>
-   <section className="contact">
-      <h1>Contact</h1>
+   <section className="contact" id="consec">
+      <h1>Contact me</h1>
       <div className="contact-container">
         <div className="contact-left">
           <div className="info-card">
@@ -15,7 +15,7 @@ const Contact = () => {
               <p><i className="fa-solid fa-message"></i> Fell free to contact me I'm always there for you</p>  
             </div>
             <div className="email">
-            <i className="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>  
             ak126pk@gmail.com</div>
             <div className="phone">
             <i className="fa-solid fa-phone"></i>
@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="contact-right">
           <div className="form-container">
             <form action="" className="form">
-              <h2>Contact me</h2>
+              <h2>Drop Me a Line</h2>
               <label for="name">Name</label>
               <input type="text" className="form-input" id="name"/>
               <label for="email">Email</label>
