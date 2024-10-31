@@ -4,6 +4,7 @@ import '../css/style.css';
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxTMUNXdeWZE-a-N66A9muMRuRRklhVDcMu-c2ErmYDUS4IQPQS0tdhUL41cHjQ0AhG/exec';
 
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     Name: '',
@@ -11,6 +12,8 @@ const Contact = () => {
     Subject: '',
     Description: ''
   });
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,14 +22,33 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    setLoading(true); 
+    setFormData({ 
+      Name: '',
+      Email: '',
+      Subject: '',
+      Description: ''
+    });
+
     fetch(scriptURL, {
       method: 'POST',
-      body: new URLSearchParams(formData)
+      body: new URLSearchParams(formData),
     })
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message));
+      .then(response => {
+        setLoading(false); 
+        if (response.ok) {
+          setMessage('Form submitted successfully!');
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(error => {
+        setLoading(false);
+        console.error('Error!', error.message);
+        setMessage('An error occurred. Please try again.');
+      });
   };
+
   
   return (
    <div>
