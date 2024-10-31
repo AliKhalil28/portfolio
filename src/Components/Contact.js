@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../css/style.css';
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxTMUNXdeWZE-a-N66A9muMRuRRklhVDcMu-c2ErmYDUS4IQPQS0tdhUL41cHjQ0AhG/exec';
@@ -13,7 +13,6 @@ const Contact = () => {
     Description: ''
   });
   const [message, setMessage] = useState('');
-  const [loading, setLoading] = useState(false); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,20 +21,20 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true); 
     setFormData({ 
       Name: '',
       Email: '',
       Subject: '',
       Description: ''
     });
+    
+    setMessage('Submitting...');
 
     fetch(scriptURL, {
       method: 'POST',
       body: new URLSearchParams(formData),
     })
       .then(response => {
-        setLoading(false); 
         if (response.ok) {
           setMessage('Form submitted successfully!');
         } else {
@@ -43,11 +42,22 @@ const Contact = () => {
         }
       })
       .catch(error => {
-        setLoading(false);
         console.error('Error!', error.message);
         setMessage('An error occurred. Please try again.');
       });
   };
+
+  // Set up useEffect to clear the message after 5 seconds whenever it changes
+  useEffect(() => {
+    if (message) {
+      const timer = setTimeout(() => {
+        setMessage('');
+      }, 5000);
+
+      return () => clearTimeout(timer); // Clean up the timer on unmount
+    }
+  }, [message]);
+
 
   
   return (
@@ -78,16 +88,20 @@ const Contact = () => {
           <div className="form-container">
             <form action="" className="form" onSubmit={handleSubmit} name="submit-to-google-sheet">
               <h2>Drop Me a Line</h2>
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input type="text" className="form-input" id="name" name="Name" value={formData.Name} onChange={handleChange} required/>
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input type="email" className="form-input" id="email" name="Email" value={formData.Email} onChange={handleChange} required/>
-              <label for="subject">Subject</label>
+              <label htmlFor="subject">Subject</label>
               <input type="text" className="form-input" id="subject" name="Subject" value={formData.Subject} onChange={handleChange} required/>
-              <label for="textarea">Message</label>
+              <label htmlFor="textarea">Message</label>
               <textarea type="text" rows="4" className="form-input" id="textarea" name="Description" value={formData.Description} onChange={handleChange} required> </textarea>
               <button type="submit" value="Submit" className="submitbtn">Submit <i className="fa-regular fa-paper-plane"></i></button> 
-              <span></span>
+              {message && (
+                <div className="alert alert-success alert-dismissible fade show" role="alert">
+                  {message}
+                </div>
+              )}
             </form>
           </div>
         </div>

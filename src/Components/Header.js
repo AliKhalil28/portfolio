@@ -29,20 +29,20 @@ export default function Header() {
   };
 
   return (
-    <section class="header" id="homesec">
+    <section className="header" id="homesec">
         <h1>Hi, I'm Ali Khalil, A passionate </h1>
         <h2>{text}<span className="cursor">|</span></h2>
-        <div class="btns">
-            <button class="btn" onClick={handleEmailClick} >Get in Touch <i class="fa-regular fa-paper-plane"></i></button>
+        <div className="btns">
+            <button className="btn" onClick={handleEmailClick} >Get in Touch <i className="fa-regular fa-paper-plane"></i></button>
 
-            <button onClick={handleButtonClick} class="btn">Resume <i class="fa-solid fa-circle-arrow-down"></i></button>
+            <button onClick={handleButtonClick} className="btn">Resume <i className="fa-solid fa-circle-arrow-down"></i></button>
             
 
         </div>
         
-        <div class="socail-links">
-            <a href="https://www.linkedin.com/in/ali-khalil-753469285/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.linkedin.com/in/ali-khalil-753469285/"><i class="fa-brands fa-github"></i></a>
+        <div className="socail-links">
+            <a href="https://www.linkedin.com/in/ali-khalil-753469285/"><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/ali-khalil-753469285/"><i className="fa-brands fa-github"></i></a>
             
         </div>
       </section>
