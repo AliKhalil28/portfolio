@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/style.css';
+import "../css/style.css";
 import htmlLogo from "../Assets/skills/htmlLogo.png";
 import cssLogo from "../Assets/skills/cssLogo.png";
 import bootstrapLogo from "../Assets/skills/bootstrapLogo.png";
@@ -10,6 +10,7 @@ import myqSqlLogo from "../Assets/skills/mysqlLogo.png";
 import gitLogo from "../Assets/skills/gitLogo.png";
 import githubLogo from "../Assets/skills/githubLogo.png";
 import cloudLogo from "../Assets/skills/cloudComputingLogo.png";
+import mongodbLogo from "../Assets/skills/mongodb-icon.svg";
 
 const skills = [
   { name: "HTML5", img: htmlLogo },
@@ -19,9 +20,10 @@ const skills = [
   { name: "React", img: reactLogo },
   { name: "Node JS", img: nodeLogo },
   { name: "MYSQL", img: myqSqlLogo },
+  { name: "MongoDB", img: mongodbLogo },
   { name: "Git", img: gitLogo },
   { name: "Github", img: githubLogo },
-  { name: "Hosting", img: cloudLogo }
+  { name: "Hosting", img: cloudLogo },
 ];
 
 const duplicatedSkills = [
