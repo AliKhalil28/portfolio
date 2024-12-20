@@ -2,12 +2,6 @@ import React from "react";
 import "../css/style.css";
 
 const Navbar = () => {
-  // const scrollToSection = (id) => {
-  //   const section = document.getElementById(id);
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container-fluid d-flex">
