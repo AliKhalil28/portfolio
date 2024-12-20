@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/style.css';
+import "../css/style.css";
 
 const educationData = [
   {
@@ -27,26 +27,27 @@ const educationData = [
 ];
 
 const Education = () => {
-  
-   return (
+  return (
     <section className="education" id="edusec">
       <h1>Education</h1>
       <div className="ex-card-body">
-      {educationData.map((edu) => (
-      <div className="ex-card" key={edu.id}>
-      <div className="upper-sec">
-      <div className="ex-left-sec"><i className="fa-solid fa-graduation-cap"></i></div>
-      <div className="ex-right-sec">
-        <p>{edu.date}</p>
-        <h4>{edu.title}</h4>
-        <p>{edu.institution}</p>
-      </div>
-      </div>
-      <div className="lower-sec">
-        <p>{edu.description}</p>
-      </div>
-      </div>
-      ))}
+        {educationData.map((edu) => (
+          <div className="ex-card" key={edu.id}>
+            <div className="upper-sec">
+              <div className="ex-left-sec">
+                <i className="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div className="ex-right-sec">
+                <p>{edu.date}</p>
+                <h4>{edu.title}</h4>
+                <p>{edu.institution}</p>
+              </div>
+            </div>
+            <div className="lower-sec">
+              <p>{edu.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
