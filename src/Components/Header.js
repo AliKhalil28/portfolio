@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import '../css/style.css';
+import "../css/style.css";
 
 export default function Header() {
-
-  const [text, setText] = useState('');
+  const [text, setText] = useState("");
   const fullText = "Full Stack Developer";
 
   useEffect(() => {
@@ -11,7 +10,7 @@ export default function Header() {
     const typingInterval = setInterval(() => {
       index++;
       setText(fullText.slice(0, index));
-      
+
       if (index === fullText.length) {
         clearInterval(typingInterval);
       }
@@ -19,9 +18,12 @@ export default function Header() {
 
     return () => clearInterval(typingInterval); // Cleanup on unmount
   }, []);
-  
+
   const handleButtonClick = () => {
-    window.open("https://drive.google.com/file/d/1vg3FVg4Mzp-MUma_c5Xphob-epBnfJTF/view?usp=sharing", "_blank");
+    window.open(
+      "https://drive.google.com/file/d/1vg3FVg4Mzp-MUma_c5Xphob-epBnfJTF/view?usp=sharing",
+      "_blank"
+    );
   };
 
   const handleEmailClick = () => {
@@ -30,22 +32,29 @@ export default function Header() {
 
   return (
     <section className="header" id="homesec">
-        <h1>Hi, I'm Ali Khalil, A passionate </h1>
-        <h2>{text}<span className="cursor">|</span></h2>
-        <div className="btns">
-            <button className="btn" onClick={handleEmailClick} >Get in Touch <i className="fa-regular fa-paper-plane"></i></button>
+      <h1>Hi, I'm Ali Khalil, A passionate </h1>
+      <h2>
+        {text}
+        <span className="cursor">|</span>
+      </h2>
+      <div className="btns">
+        <button className="btn" onClick={handleEmailClick}>
+          Get in Touch <i className="fa-regular fa-paper-plane"></i>
+        </button>
 
-            <button onClick={handleButtonClick} className="btn">Resume <i className="fa-solid fa-circle-arrow-down"></i></button>
-            
+        <button onClick={handleButtonClick} className="btn">
+          Resume <i className="fa-solid fa-circle-arrow-down"></i>
+        </button>
+      </div>
 
-        </div>
-        
-        <div className="socail-links">
-            <a href="https://www.linkedin.com/in/ali-khalil-753469285/"><i className="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.linkedin.com/in/ali-khalil-753469285/"><i className="fa-brands fa-github"></i></a>
-            
-        </div>
-      </section>
+      <div className="socail-links">
+        <a href="https://www.linkedin.com/in/ali-khalil-753469285/">
+          <i className="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/AliKhalil28">
+          <i className="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </section>
   );
 }
-
