@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
               <div className="phone">
                 <i className="fa-solid fa-phone"></i>
-                +92 306 043245
+                +92 306 0435245
               </div>
               <div className="info-social">
                 <a href="https://www.linkedin.com/in/ali-khalil-753469285/">
