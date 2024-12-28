@@ -8,6 +8,7 @@ import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
 import Education from "./Components/Education";
 import LoadingBar from "react-top-loading-bar";
+import Certificate from "./Components/Certificate";
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -18,7 +19,7 @@ function App() {
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercentage = (scrollTop / docHeight) * 100;
-      const scrollPercentageupdated  = scrollPercentage - 1; 
+      const scrollPercentageupdated = scrollPercentage - 1;
 
       setProgress(scrollPercentageupdated);
     };
@@ -37,6 +38,7 @@ function App() {
       <Header />
       <About />
       <Skills />
+      <Certificate />
       <Project />
       <Experience />
       <Education />
