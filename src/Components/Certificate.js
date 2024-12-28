@@ -42,7 +42,7 @@ const Certificates = [
 
 const Certificate = () => {
   return (
-    <section className="projects" id="prosec">
+    <section className="projects" id="certsec">
       <h1>Certificates</h1>
       <div className="card-body">
         <div className="card">
