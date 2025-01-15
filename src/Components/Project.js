@@ -22,7 +22,7 @@ const projects = [
       "A personal portfolio website built using React, showcasing user skills, projects, experience, contact options, socail icons and github code links.",
     image: prjct3,
     demoLink: "https://www.codewithali.info/",
-    codeLink: "hhttps://github.com/AliKhalil28/portfolio",
+    codeLink: "https://github.com/AliKhalil28/portfolio",
   },
   {
     id: 3,
@@ -30,8 +30,7 @@ const projects = [
     description:
       "A React app that fetches and displays user profiles from the Random User API with pagination. Built using React hooks, and Tailwind CSS and responsive user interface.",
     image: prjct4,
-    demoLink:
-      "https://randam-user-api-react-3cq755fls-ali-khalils-projects-3784c504.vercel.app/",
+    demoLink: "https://randam-user-api-react.vercel.app/",
     codeLink: "https://github.com/AliKhalil28/RandamUserAPIReact",
   },
 ];
