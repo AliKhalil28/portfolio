@@ -19,6 +19,7 @@ function App() {
       const docHeight =
         document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercentage = (scrollTop / docHeight) * 100;
+
       const scrollPercentageupdated = scrollPercentage - 1;
 
       setProgress(scrollPercentageupdated);
