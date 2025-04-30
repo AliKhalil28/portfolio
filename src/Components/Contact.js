@@ -73,7 +73,7 @@ const Contact = () => {
               </div>
               <div className="email">
                 <i className="fa-solid fa-envelope"></i>
-                ak126pk@gmail.com
+                alikhalil.webdev@gmail.com
               </div>
               <div className="phone">
                 <i className="fa-solid fa-phone"></i>
@@ -158,7 +158,7 @@ const Contact = () => {
         </div>
       </section>
       <footer className="footer">
-        <p>Ali Khalil | All Right Reserved © 2024</p>
+        <p>Ali Khalil | All Right Reserved © 2025</p>
       </footer>
     </div>
   );

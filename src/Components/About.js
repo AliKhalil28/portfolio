@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../Assets/image.jpg";
+import img from "../Assets/image.png";
 import "../css/style.css";
 
 const About = () => {
@@ -8,15 +8,14 @@ const About = () => {
       <div className="about-left">
         <h1>Personal Profile</h1>
         <p>
-          A passionate IT professional with hands-on experience in various
-          domains, including web development, machine learning, and software
-          deployment. I developed a complete Medicine Recommendation system
-          using Python Flask and React for my final year project. My experience
-          spans freelancing and remote work, handling final-year student
-          projects across basic-level domains such as web front-end, PHP
-          back-end, MYSQL Database, Android, networking, OS, Git/GitHub, and
-          deployment. I'm a quick learner, currently mastering the MERN stack to
-          further expand my expertise.
+          I’m Ali Khalil, a Medalist BSIT graduate (3.52 CGPA) from Government
+          College University Faisalabad, with a strong foundation in MERN stack
+          development (MongoDB, Express.js, React, Node.js). I’m work
+          passionate, having built a full-stack Medicine Recommendation System
+          using React.js and Flask as my final year project, achieving 90%
+          prediction accuracy, and developed 15+ web applications through
+          freelance projects. I’m eager to contribute my skills to innovative
+          projects and grow as a MERN stack developer.
         </p>
       </div>
       <div className="about-right">

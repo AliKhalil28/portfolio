@@ -27,7 +27,7 @@ export default function Header() {
   };
 
   const handleEmailClick = () => {
-    window.location.href = "mailto:ak126pk@gmail.com";
+    window.location.href = "mailto:alikhalil.webdev@gmail.com";
   };
 
   return (
