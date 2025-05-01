@@ -16,7 +16,7 @@ export default function Header() {
       }
     }, 130); // Adjust typing speed as needed
 
-    return () => clearInterval(typingInterval); // Cleanup on unmount
+    return () => clearInterval(typingInterval);
   }, []);
 
   const handleButtonClick = () => {
