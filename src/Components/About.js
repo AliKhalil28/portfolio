@@ -8,13 +8,14 @@ const About = () => {
       <div className="about-left">
         <h1>Personal Profile</h1>
         <p>
-          Medalist BSIT Graduate (3.52 CGPA) with a solid foundation in PHP and
-          web development, complemented by expertise in MERN stack technologies
-          (React, Node.js, MongoDB). Developed 15+ web applications, including a
-          PHP-based backend for a Medicine Recommendation System with 90%
-          prediction accuracy. Work-passionate and skilled in building scalable
-          server-side solutions, eager to excel as a Senior PHP Developer at
-          Intellectual Bunch Ltd.
+          I’m Ali Khalil, a Medalist BSIT graduate (3.52 CGPA) from Government
+          College University Faisalabad, with a strong foundation in PHP and
+          MERN stack development (MongoDB, Express.js, React, Node.js). I’m work
+          passionate, having built a full-stack Medicine Recommendation System
+          using React.js and Flask as my final year project, achieving 90%
+          prediction accuracy, and developed 15+ web applications through
+          freelance projects. I’m eager to contribute my skills to innovative
+          projects and grow as a MERN stack developer.
         </p>
       </div>
       <div className="about-right">
