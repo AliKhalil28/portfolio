@@ -14,7 +14,7 @@ export default function Header() {
       if (index === fullText.length) {
         clearInterval(typingInterval);
       }
-    }, 130); // Adjust typing speed as needed
+    }, 130); // Adjust typing speed as  needed
 
     return () => clearInterval(typingInterval);
   }, []);
