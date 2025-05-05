@@ -3,7 +3,6 @@ import prjct2 from "../Assets/project2.jpg";
 import prjct3 from "../Assets/project3.png";
 import prjct4 from "../Assets/project4.png";
 
-// Project data
 const projects = [
   {
     id: 1,
