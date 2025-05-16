@@ -22,7 +22,7 @@ const skills = [
   { name: "JavaScript", img: jsLogo },
   { name: "PHP", img: php },
   { name: "Laravel", img: laravel },
-  { name: "CodeIgniter", img: codeIgniter },
+  // { name: "CodeIgniter", img: codeIgniter },
   { name: "React", img: reactLogo },
   { name: "Node JS", img: nodeLogo },
   { name: "MYSQL", img: myqSqlLogo },
