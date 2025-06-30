@@ -15,7 +15,7 @@ const About = () => {
           using React.js and Flask as my final year project, achieving 90%
           prediction accuracy, and developed 15+ web applications through
           freelance projects. I’m eager to contribute my skills to innovative
-          projects and grow as a MERN stack developer.
+          projects and grow as a MERN stack developer. 
         </p>
       </div>
       <div className="about-right">
