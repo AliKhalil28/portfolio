@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: 3,
-    title: "Task Management System",
+    title: "Task Management System (Frontend)",
     description:
       "A React-based web app to manage tasks with features like auth, filters, and stats.Built using React.js, Vite, and ESLint for a fast and clean development experience.",
     image: prjct4,
