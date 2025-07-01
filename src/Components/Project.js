@@ -25,12 +25,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Random User API using React Js",
+    title: "Task Management System",
     description:
-      "A React app that fetches and displays user profiles from the Random User API with pagination. Built using React hooks, and Tailwind CSS and responsive user interface.",
+      "A React-based web app to manage tasks with features like auth, filters, and stats.Built using React.js, Vite, and ESLint for a fast and clean development experience.",
     image: prjct4,
-    demoLink: "https://randam-user-api-react.vercel.app/",
-    codeLink: "https://github.com/AliKhalil28/RandamUserAPIReact",
+    demoLink: "https://task-management-frontend-omega-amber.vercel.app/",
+    codeLink: "https://github.com/AliKhalil28/Task-Management-Frontend",
   },
 ];
 
