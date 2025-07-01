@@ -11,17 +11,17 @@ import gitLogo from "../Assets/skills/gitLogo.png";
 import githubLogo from "../Assets/skills/githubLogo.png";
 import cloudLogo from "../Assets/skills/cloudComputingLogo.png";
 import mongodbLogo from "../Assets/skills/mongodb-icon.svg";
-import php from "../Assets/skills/PHP.svg";
-import laravel from "../Assets/skills/Laravel.svg";
-import codeIgniter from "../Assets/skills/CodeIgniter.svg";
+// import php from "../Assets/skills/PHP.svg";
+// import laravel from "../Assets/skills/Laravel.svg";
+// import codeIgniter from "../Assets/skills/CodeIgniter.svg";
 
 const skills = [
   { name: "HTML5", img: htmlLogo },
   { name: "CSS3", img: cssLogo },
   { name: "Bootstrap", img: bootstrapLogo },
   { name: "JavaScript", img: jsLogo },
-  { name: "PHP", img: php },
-  { name: "Laravel", img: laravel },
+  // { name: "PHP", img: php },
+  // { name: "Laravel", img: laravel },
   // { name: "CodeIgniter", img: codeIgniter },
   { name: "React", img: reactLogo },
   { name: "Node JS", img: nodeLogo },
